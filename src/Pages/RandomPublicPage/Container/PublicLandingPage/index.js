@@ -34,10 +34,10 @@ class PublicLandingPage extends React.Component {
                         <Menu theme="dark" mode="horizontal" defaultSelectedKeys={[]} className={styles.menuWrapper}>
                             <Menu.Item key="1">REGISTER</Menu.Item>
                             <SubMenu key="sub2" icon={< AppstoreOutlined />} title="RULE BOOK">
-                                <Menu.Item key="7">Cricket</Menu.Item>
-                                <Menu.Item key="8">Football</Menu.Item>
-                                <Menu.Item key="9">Volley Ball</Menu.Item>
-                                <Menu.Item key="10">Swimming</Menu.Item>
+								<Menu.Item key="7">CRICKET</Menu.Item>
+                                <Menu.Item key="8">FOOTBALL</Menu.Item>
+                                <Menu.Item key="9">VOLLEY BALL</Menu.Item>
+                                <Menu.Item key="10">SWIMMING</Menu.Item>
                             </SubMenu>
 							<Menu.Item key="3">ABOUT</Menu.Item>
                             <Menu.Item key="4">CONTACT US</Menu.Item>

@@ -31,15 +31,15 @@ class PublicHeader extends React.Component {
                     }}>
                         <div className={styles.logo}/>
                         <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['2']} className={styles.menuWrapper}>
-                            <Menu.Item key="1">Home</Menu.Item>
+                            <Menu.Item key="1">HOME</Menu.Item>
                             <Menu.Item key="2">Register</Menu.Item>
                             <SubMenu key="sub2" icon={< AppstoreOutlined />} title="Game Rules">
-                                <Menu.Item key="7">Cricket</Menu.Item>
-                                <Menu.Item key="8">Football</Menu.Item>
-                                <Menu.Item key="9">Volley Ball</Menu.Item>
-                                <Menu.Item key="10">Swimming</Menu.Item>
+                                <Menu.Item key="7">CRICKET</Menu.Item>
+                                <Menu.Item key="8">FOOTBALL</Menu.Item>
+                                <Menu.Item key="9">VOLLEY BALL</Menu.Item>
+                                <Menu.Item key="10">SWIMMING</Menu.Item>
                             </SubMenu>
-                            <Menu.Item key="4">About</Menu.Item>
+                            <Menu.Item key="4">ABOUT</Menu.Item>
                         </Menu>
                     </Header>
 
