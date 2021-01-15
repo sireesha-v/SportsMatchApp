@@ -1,0 +1,254 @@
+.logo {
+    width: 61px;
+    height: 50px;
+    background: url('../../../../images/logo.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 35px 24px 16px 0;
+    float: left;
+}
+.siteLayout {
+    padding: 0 50px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.siteLayout .siteLayoutBackground {
+    background: #fff;
+}
+[data-theme="dark"] .siteLayout .siteLayoutBackground {}
+.menuWrapper {
+    float: right;
+}
+.menuWrapper > li,
+.menuWrapper > li:hover {
+    margin: 0 10px;
+    font-family: 'OpenSans';
+    font-size: 18px;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.94;
+    letter-spacing: 2.52px;
+    text-align: center;
+    color: #ffffff;
+    background: none !important;
+}
+
+.basicLayout {
+    background: none;
+    height: 100%;
+}
+.mainContainer .registerBtn,
+.mainContainer .registerBtn:hover {
+    width: 271px;
+    height: 64px;
+    padding: 0;
+    border-radius: 32px;
+    box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.8);
+    border: solid 2px #ffffff;
+    background: none;
+    font-size: 1.68rem;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 2.03px;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 30px;
+}
+
+.pageContainer {
+    height: 100%;
+    background-image: url('../../../../images/Background.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+.leftContent {
+    width: 60%;
+}
+.siteLayout .leftContent > h1 {
+    font-family: OpenSans;
+    font-size: 4rem;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: 3.52px;
+    text-align: left;
+    color: #ffffff;
+}
+
+.siteLayout .leftContent > h3 {
+    font-family: OpenSans;
+    font-size: 40px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: 2.2px;
+    text-align: left;
+    color: #ffffff;
+}
+.siteLayout .leftContent > h4 {
+    font-family: OpenSans;
+    font-size: 2.37rem;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: 0.95px;
+    text-align: left;
+    color: #ffffff;
+}
+.siteLayout .leftContent > h5 {
+    font-family: OpenSans;
+    font-size: 1.62rem;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+}
+.siteLayout .leftContent > p {
+    font-family: OpenSans;
+    font-size: 1.375rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+}
+.rightContent {
+    width: 40%;
+}
+.rightContent .img {
+    background-repeat: no-repeat;
+    width: 450px;
+    height: 450px;
+    background: transparent url('../../../../images/Winners-amico.svg') 0 0 no-repeat padding-box;
+    background-size: contain;
+    margin-left: 40px;
+}
+.handImg {
+    /* width: 248px;
+    height: 50px;
+    background: url('../../../../images/3dHand1.png');
+    background-repeat: no-repeat;
+    background-size: contain; */
+}
+.clearAll {
+    clear: both;
+}
+.sportsListImg,
+.sportsListImgTab {
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 450px;
+    background: transparent url('../../../../images/games.svg') 0 0 no-repeat padding-box;
+    background-size: contain;
+    background-position: 50% 50%;
+}
+.sportsListImgWrapper {
+    margin-top: 150px;
+}
+.sportsListImgTab {
+    display: none;
+}
+.mainContainer {
+    height: calc(100% - 64px);
+    overflow: auto;
+}
+.registerBtnWrapper {
+    text-align: center;
+    padding-bottom: 150px;
+}
+.regFormModal {
+    background: linear-gradient(121deg, rgb(241 198 213 / 0.8) 5%, rgb(242 58 0 / 0.8) 96%);
+    width: 70% !important;
+}
+
+/* For Tablets */
+@media only screen and (max-width:1300px) {
+    .menuWrapper {
+        display: none;
+    }
+    .siteLayout {
+        display: block;
+    }
+    .rightContent .img {
+        margin: 50px auto;
+    }
+    .leftContent,
+    .rightContent {
+        width: 100%;
+    }
+    .siteLayout .leftContent h1 {
+        font-family: OpenSans;
+        font-size: 2rem;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 4rem;
+        letter-spacing: 1.76px;
+        text-align: left;
+        color: #ffffff;
+    }
+    .siteLayout .leftContent h3 {
+        font-family: OpenSans;
+        font-size: 1.75rem;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 3;
+        letter-spacing: 0.99px;
+        text-align: left;
+        color: #ffffff;
+    }
+    .siteLayout .leftContent h4 {
+        font-family: OpenSans;
+        font-size: 1.125rem;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 2.94;
+        letter-spacing: 0.45px;
+        text-align: left;
+        color: #ffffff;
+    }
+    .siteLayout .leftContent p {
+        font-family: OpenSans;
+        font-size: 0.875rem;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.36;
+        letter-spacing: normal;
+        text-align: left;
+        color: #ffffff;
+    }
+    .siteLayout .leftContent h5 {
+        font-family: OpenSans;
+        font-size: 1rem;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 2.94;
+        letter-spacing: 0.4px;
+        text-align: left;
+        color: #ffffff;
+    }
+    .sportsListImg {
+        display: none;
+    }
+    .sportsListImgWrapper {
+        width: 100%;
+        height: 900px;
+    }
+    .sportsListImgTab {
+        background: transparent url('../../../../images/gamesTab.svg') 0 0 no-repeat padding-box;
+        display: block;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        height: 100%;
+    }
+}

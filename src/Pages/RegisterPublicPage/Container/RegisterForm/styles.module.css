@@ -1,0 +1,33 @@
+.regFormModal {
+    width: 85%;
+    background: none;
+    margin: auto;
+}
+.regFormModal div[role="tablist"] {
+    width: 406px;
+    height: 66px;
+    background: #ffffff;
+    margin: auto;
+    border-radius: 50px;
+}
+.sportsCheckBtn {
+    border-radius: 40px;
+    border: solid 3px rgba(255, 255, 255, 0.6);
+    background: none;
+    text-transform: uppercase;
+    margin: 0 10px 10px 0;
+}
+.formGroup {
+    width: 60%;
+    margin: auto;
+}
+.payBtn,.payBtn:hover {
+    width: 275px;
+    height: 64px;
+    margin: auto;
+    padding: 13px 21.8px 14px 25px;
+    border-radius: 32px;
+    box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.21);
+	background-color: #851e5b;
+	border: none;
+}

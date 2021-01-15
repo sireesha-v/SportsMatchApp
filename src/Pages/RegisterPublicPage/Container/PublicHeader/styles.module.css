@@ -1,0 +1,31 @@
+.logo {
+    width: 120px;
+    height: 31px;
+    background: rgba(255, 255, 255, 0.2);
+    margin: 16px 24px 16px 0;
+    float: left;
+}
+.siteLayout .siteLayoutBackground {
+    background: #fff;
+}
+[data-theme="dark"] .siteLayout .siteLayoutBackground {
+    }
+.menuWrapper {
+    float: right;
+}
+.menuWrapper > li {
+    margin: 0 10px;
+}
+.registerBtn {
+    }
+.basicLayout {
+    background: none;
+}
+.basicLayout > header {
+    background: none;
+}
+.registerBtn {
+    position: fixed;
+    right: 40%;
+    bottom: 40%;
+}
