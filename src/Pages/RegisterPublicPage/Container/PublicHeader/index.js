@@ -2,10 +2,6 @@ import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import {withRouter} from 'react-router-dom';
 import styles from './styles.module.css';
-import {
-	AppstoreOutlined,
-	LinkOutlined,
-  } from '@ant-design/icons';
 import {Layout, Menu, Button} from 'antd';
 
 const {Header, Content, Footer} = Layout;
@@ -33,7 +29,7 @@ class PublicHeader extends React.Component {
                         <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['2']} className={styles.menuWrapper}>
                             <Menu.Item key="1">HOME</Menu.Item>
                             <Menu.Item key="2">Register</Menu.Item>
-                            <SubMenu key="sub2" icon={< AppstoreOutlined />} title="Game Rules">
+                            <SubMenu key="sub2" title="Rule Book" icon={<span className={styles.downArrowIcon}/>} >
                                 <Menu.Item key="7">CRICKET</Menu.Item>
                                 <Menu.Item key="8">FOOTBALL</Menu.Item>
                                 <Menu.Item key="9">VOLLEY BALL</Menu.Item>

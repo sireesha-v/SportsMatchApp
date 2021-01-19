@@ -31,3 +31,13 @@
 	background-color: #851e5b;
 	border: none;
 }
+
+/* For Tablets */
+@media only screen and (max-width:1300px) {
+	.formGroup{
+		width: 100%;
+	}
+	.sportsCheckBtn{
+		font-size: 0.6875rem;
+	}
+}

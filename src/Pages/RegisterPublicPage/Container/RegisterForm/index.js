@@ -149,7 +149,6 @@ const RegistrationForm = () => {
                                 }
                             ]}>
                                 <Input
-                                    addonBefore={prefixSelector}
                                     style={{
                                     width: '100%'
                                 }}/>
@@ -236,7 +235,7 @@ const RegistrationForm = () => {
                 <TabPane tab="Inter-School" key="1">
                     <FormContainer/>
                 </TabPane>
-                <TabPane tab="Community" key="2">
+                <TabPane tab="Community" disabled key="2">
                     Content of Community
                 </TabPane>
             </Tabs>

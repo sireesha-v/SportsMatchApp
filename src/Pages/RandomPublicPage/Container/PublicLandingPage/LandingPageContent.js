@@ -32,7 +32,6 @@ class LandingPageContent extends React.Component {
                     {/* Main content-Right */}
                     <div className={styles.rightContent}>
                         <div className={styles.img}/>
-                        <div className={styles.handImg}/>
                     </div>
                     {/* Main content-Left */}
                     <div className={styles.leftContent}>
@@ -49,6 +48,7 @@ class LandingPageContent extends React.Component {
                             shape="round"
                             className={styles.registerBtn}
 							onClick={() => this.showModal(true)}>Register Now</Button>
+						<span className={styles.handImg}/>
                     </div>
                     <div className={'clearAll'}/>
                 </Content>
@@ -61,6 +61,7 @@ class LandingPageContent extends React.Component {
                             shape="round"
                             className={styles.registerBtn}
                             onClick={() => this.showModal(true)}>Register Now</Button>
+						<span className={styles.handImg2}/>
                     </div>
                 </div>
 
