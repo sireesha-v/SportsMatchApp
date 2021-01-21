@@ -1,5 +1,7 @@
 html {
     font-size: 16px;
+    font-family: 'OpenSans';
+    font-weight: normal;
 }
 * {
     margin: 0;
@@ -25,6 +27,27 @@ h5,
 h6 {
     margin: 0;
 }
+@font-face {
+    font-family: 'OpenSans';
+    font-weight: 300;
+    src: url('./fonts/Open_Sans/OpenSans-Light.ttf');
+}
+@font-face {
+    font-family: 'OpenSans';
+    font-weight: bold;
+    src: url('./fonts/Open_Sans/OpenSans-Bold.ttf');
+}
+@font-face {
+    font-family: 'OpenSans';
+    font-weight: 600;
+    src: url('./fonts/Open_Sans/OpenSans-SemiBold.ttf');
+}
+@font-face {
+    font-family: 'OpenSans';
+    font-weight: normal;
+    src: url('./fonts/Open_Sans/OpenSans-Regular.ttf');
+}
+
 /* antd override */
 .ant-menu-dark .ant-menu-sub,
 .ant-menu.ant-menu-dark,
@@ -34,20 +57,44 @@ h6 {
 .ant-modal-content {
     background: none;
 }
+.ant-tabs-tab {
+    opacity: 0.3;
+    font-family: OpenSans;
+    font-size: 16px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.38;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000000;
+    top: -6px;
+}
+
 .ant-tabs-card.ant-tabs-top > .ant-tabs-nav .ant-tabs-tab-active,
 .ant-tabs-card.ant-tabs-top > div > .ant-tabs-nav .ant-tabs-tab-active {
     border-bottom-color: #fff;
-    width: 189px;
-    height: 58px;
+    width: 145px;
+    height: 44px;
     padding: 13px 33px 15px 27px;
     border-radius: 46px;
-	background-color: #c7747c;
-	opacity: 1;
+    background-color: #ca6f72;
+    opacity: 1;
 }
 .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
     letter-spacing: normal;
     text-align: left;
     color: #ffffff;
+    font-family: 'OpenSans';
+    font-size: 17px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.35;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+    opacity: 1;
 }
 .ant-tabs-card > .ant-tabs-nav .ant-tabs-tab,
 .ant-tabs-card > div > .ant-tabs-nav .ant-tabs-tab {
@@ -57,15 +104,14 @@ h6 {
     border: 1px solid #f0f0f0;
     -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
     transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-    width: 189px;
+    width: 145px;
     text-align: center;
     height: 58px;
     justify-content: center;
     position: relative;
-	top: 4px;
-	left: 3px;
-    opacity: 0.3;
-    font-family: OpenSans;
+    top: 3px;
+    left: 3px;
+    font-family: 'OpenSans';
     font-size: 22px;
     font-weight: 600;
     font-stretch: normal;
@@ -75,35 +121,241 @@ h6 {
     text-align: left;
     color: #000000;
 }
-.ant-tabs-top > .ant-tabs-nav::before, .ant-tabs-bottom > .ant-tabs-nav::before, .ant-tabs-top > div > .ant-tabs-nav::before, .ant-tabs-bottom > div > .ant-tabs-nav::before{
-	border:none;
+.ant-tabs-bottom > .ant-tabs-nav::before,
+.ant-tabs-bottom > div > .ant-tabs-nav::before,
+.ant-tabs-top > .ant-tabs-nav::before,
+.ant-tabs-top > div > .ant-tabs-nav::before {
+    border: none;
 }
-.ant-modal-header{
-	display: none;
+.ant-modal-header {
+    display: none;
 }
-.ant-input,.ant-input:hover {
+.ant-input,
+.ant-input:hover {
     background-color: transparent;
     background-image: none;
-    border: 3px solid #fff !important;
-	height: 73px;
-	font-size: 18px;
+    border: solid 3px #fff !important;
+    height: 56px;
+    font-size: 18px;
+    outline: none;
+    box-shadow: none;
+    padding-left: 15px;
+    color: #ffffff;
 }
-.ant-form{
-	margin-top:20px;
+.ant-form {
+    margin-top: 20px;
+}
+.ant-form-item {
+    margin-bottom: 10px;
 }
 .ant-form-item-label > label {
-    font-family: OpenSans;
-    font-size: 18px;
-    font-weight: 600;
+    font-family: 'OpenSans';
     font-stretch: normal;
     font-style: normal;
     letter-spacing: 0.54px;
     text-align: left;
     color: #ffffff;
+    font-size: 13px;
+    font-weight: 600;
+    height: auto;
 }
-.ant-form-item-has-error .ant-input, .ant-form-item-has-error .ant-input-affix-wrapper, .ant-form-item-has-error .ant-input:hover, .ant-form-item-has-error .ant-input-affix-wrapper:hover{
-	background: none;
+.ant-form-item-has-error .ant-input,
+.ant-form-item-has-error .ant-input-affix-wrapper,
+.ant-form-item-has-error .ant-input-affix-wrapper:hover,
+.ant-form-item-has-error .ant-input:hover {
+    background: none;
 }
-.ant-modal-footer{
-	display: none;
+.ant-modal-footer {
+    display: none;
+}
+.ant-drawer-body {
+    background: #FF5722;
+}
+.ant-menu-inline,
+.ant-menu-vertical,
+.ant-menu-vertical-left {}
+.ant-menu-item,
+.ant-menu-item-active,
+.ant-menu-item:hover,
+.ant-menu-submenu-active,
+.ant-menu-submenu-title:hover,
+.ant-menu:not(.ant-menu-inline) .ant-menu-submenu-open {
+    color: #fff;
+}
+.ant-menu-submenu-inline > .ant-menu-submenu-title .ant-menu-submenu-arrow,
+.ant-menu-submenu-inline > .ant-menu-submenu-title .ant-menu-submenu-arrow::before,
+.ant-menu-submenu-inline > .ant-menu-submenu-title:hover .ant-menu-submenu-arrow::after,
+.ant-menu-submenu-inline > .ant-menu-submenu-title:hover .ant-menu-submenu-arrow::before,
+.ant-menu-submenu-vertical > .ant-menu-submenu-title .ant-menu-submenu-arrow,
+.ant-menu-submenu-vertical > .ant-menu-submenu-title .ant-menu-submenu-arrow::after,
+.ant-menu-submenu-vertical > .ant-menu-submenu-title .ant-menu-submenu-arrow::before,
+.ant-menu-submenu-vertical > .ant-menu-submenu-title:hover .ant-menu-submenu-arrow::after,
+.ant-menu-submenu-vertical > .ant-menu-submenu-title:hover .ant-menu-submenu-arrow::before,
+.ant-menu-submenu-vertical-left > .ant-menu-submenu-title .ant-menu-submenu-arrow,
+.ant-menu-submenu-vertical-left > .ant-menu-submenu-title .ant-menu-submenu-arrow::after,
+.ant-menu-submenu-vertical-left > .ant-menu-submenu-title .ant-menu-submenu-arrow::before,
+.ant-menu-submenu-vertical-left > .ant-menu-submenu-title:hover .ant-menu-submenu-arrow::after,
+.ant-menu-submenu-vertical-left > .ant-menu-submenu-title:hover .ant-menu-submenu-arrow::before,
+.ant-menu-submenu-vertical-right > .ant-menu-submenu-title .ant-menu-submenu-arrow,
+.ant-menu-submenu-vertical-right > .ant-menu-submenu-title .ant-menu-submenu-arrow::after,
+.ant-menu-submenu-vertical-right > .ant-menu-submenu-title .ant-menu-submenu-arrow::before,
+.ant-menu-submenu-vertical-right > .ant-menu-submenu-title:hover .ant-menu-submenu-arrow::after,
+.ant-menu-submenu-vertical-right > .ant-menu-submenu-title:hover .ant-menu-submenu-arrow::before {
+    background: #fff;
+}
+.ant-menu-submenu-popup,
+.ant-menu-submenu-popup > .ant-menu {
+    background-image: url('./images/Background.png') !important;
+}
+.ant-drawer-header {
+    display: none;
+}
+.ant-image-preview-mask,
+.ant-modal-mask {
+    background: none;
+}
+.ant-tabs-tab-btn {
+    outline: none;
+    font-size: 13px;
+    /* opacity: 0.3; */
+    font-family: OpenSans;
+    font-size: 16px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.38;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000000;
+}
+.ant-tabs-tab-disabled {
+    padding-top: 0 !important;
+    top: 0 !important;
+}
+.ant-form-item-label > label.ant-form-item-required:not(.ant-form-item-required-mark-optional)::before {
+    display: inline-block;
+    margin-right: 4px;
+    color: #fff;
+    font-size: 15px;
+    line-height: 1;
+    content: '*';
+    position: absolute;
+    right: -14px;
+}
+::-webkit-input-placeholder,
+::placeholder {
+    color: #ffffff;
+    font-family: 'OpenSans';
+    font-weight: 600;
+}
+.ant-col-24.ant-form-item-label,
+.ant-col-xl-24.ant-form-item-label,
+.ant-form-vertical .ant-form-item-label {
+    padding: 0;
+}
+.ant-modal-close-x {
+    display: block;
+    width: 56px;
+    height: 56px;
+    font-size: 20px;
+    font-style: normal;
+    line-height: 56px;
+    text-align: center;
+    text-transform: none;
+    text-rendering: auto;
+    color: #8e273b;
+}
+::-moz-placeholder,
+::-ms-placeholder,
+::-webkit-input-placeholder,
+::placeholder {
+    color: rgba(255,255,255,0.6) !important;
+}
+
+::-moz-placeholder {
+    color: rgba(255,255,255,0.6) !important;
+}
+
+::-ms-placeholder {
+    color: rgba(255,255,255,0.6) !important;
+}
+
+::placeholder {
+    color: rgba(255,255,255,0.6) !important;
+}
+.ant-checkbox-checked::after,.ant-checkbox-wrapper:hover .ant-checkbox-inner, .ant-checkbox:hover .ant-checkbox-inner, .ant-checkbox-input:focus + .ant-checkbox-inner{
+	/* background: #ffffff; */
+}
+
+/* For Tablets */
+@media only screen and (max-width:800px) {
+    .ant-tabs-card.ant-tabs-top > .ant-tabs-nav .ant-tabs-tab-active,
+    .ant-tabs-card.ant-tabs-top > div > .ant-tabs-nav .ant-tabs-tab-active {
+        border-bottom-color: #fff;
+        width: 81px;
+        height: 25px;
+        box-sizing: border-box;
+        padding: 0;
+        border-radius: 46px;
+        background-color: #ca6f72;
+        opacity: 1;
+        top: 2px;
+    }
+    .ant-tabs-tab {
+        height: 25px !important;
+        width: auto !important;
+    }
+    .ant-tabs-card > .ant-tabs-nav .ant-tabs-tab,
+    .ant-tabs-card > div > .ant-tabs-nav .ant-tabs-tab {
+        width: auto !important;
+        padding-bottom: 0 !important;
+    }
+    .ant-tabs-tab .ant-tabs-tab-btn,
+    .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+        font-family: 'OpenSans';
+        font-size: 10px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.4;
+        letter-spacing: normal;
+        text-align: left;
+        padding: 0 10px;
+    }
+    .ant-input,
+    .ant-input:hover {
+        height: 32px;
+        border: solid 2px #fff !important;
+        font-family: 'OpenSans';
+        font-size: 10px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.4;
+        letter-spacing: normal;
+        text-align: left;
+        color: #ffffff;
+    }
+    .ant-form-item .ant-form-item-label > label {
+        margin: 0;
+        font-family: 'OpenSans';
+        font-size: 9px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.44;
+        letter-spacing: 0.27px;
+        text-align: left;
+        color: #ffffff;
+	}
+	.ant-modal-body{
+		padding: 10px;
+	}
+	.ant-modal-close-x{
+		font-size: 10px;
+	}
+	#register_checkbox-group > div{
+		display: block;
+		margin:auto;
+	}
 }

@@ -2,42 +2,121 @@
     width: 85%;
     background: none;
     margin: auto;
+    padding-top: 20px;
 }
 .regFormModal div[role="tablist"] {
-    width: 406px;
-    height: 66px;
+    height: 50px;
     background: #ffffff;
     margin: auto;
     border-radius: 50px;
+    width: 310px;
+}
+.checkbox {
+    font-family: OpenSans;
+    font-size: 15px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: 0.45px;
+    text-align: left;
+    color: #ffffff;
 }
 .sportsCheckBtn {
     border-radius: 40px;
-    border: solid 3px rgba(255, 255, 255, 0.6);
+    border: solid 2px #ffffff;
     background: none;
     text-transform: uppercase;
-    margin: 0 10px 10px 0;
+    margin: 5px 10px 5px 0;
+    height: 47px;
+    width: 170px;
+    text-align: left;
+}
+.sportsCheckBtn:focus,
+.sportsCheckBtn:hover {
+    background: none;
+    border: solid 2px #ffffff;
+}
+.sportsCheckBtn > span[role='img'] {
+    float: right;
+    margin: 3px 0 0 12px;
+    display: inline-block;
 }
 .formGroup {
     width: 60%;
     margin: auto;
 }
-.payBtn,.payBtn:hover {
-    width: 275px;
-    height: 64px;
-    margin: auto;
-    padding: 13px 21.8px 14px 25px;
+.payBtn,
+.payBtn:hover {
+    width: 210px;
+    height: 49px;
+    margin: 20px auto;
+    padding: 10px 17px 12px 26px;
+    object-fit: contain;
     border-radius: 32px;
     box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.21);
-	background-color: #851e5b;
-	border: none;
+    background: #851e5b;
+    border: none;
 }
 
 /* For Tablets */
-@media only screen and (max-width:1300px) {
-	.formGroup{
-		width: 100%;
+@media only screen and (max-width:800px) {
+    .formGroup {
+        width: 70%;
+    }
+    .regFormModal {
+        width: 100%;
+    }
+    .sportsCheckBtn {
+        font-size: 0.6875rem;
+        height: 28px;
+        width: 100px;
+        font-size: 9px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.44;
+        letter-spacing: normal;
+        text-align: left;
+        color: #ffffff;
+        border-width: 1px;
+        padding-left: 0;
+    }
+
+    .regFormModal div[role="tablist"] {
+        height: 29px;
+        width: auto;
+    }
+    .payBtn,
+    .payBtn:hover {
+        width: 129px;
+        height: 29px;
+        font-family: OpenSans;
+        font-size: 11px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 0.18;
+        letter-spacing: 0.83px;
+        text-align: center;
+        color: #ffffff;
+    }
+    .sportsCheckBtn > span[role='img'] {
+        float: right;
+        margin: 1px 0 0;
+        display: inline-block;
+        position: relative;
+        left: 4px;
 	}
-	.sportsCheckBtn{
-		font-size: 0.6875rem;
+	.checkbox{
+		font-family: 'OpenSans';
+		font-size: 9px !important;
+		font-weight: 600;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: 1.44;
+		letter-spacing: 0.27px;
+		text-align: left;
+		color: #ffffff;
 	}
 }

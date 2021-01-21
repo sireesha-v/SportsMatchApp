@@ -17,7 +17,10 @@ class LandingPageContent extends React.Component {
 			showRegModal: flag
 		});
 	}
-
+	componentWillReceiveProps(nextProps){
+		if(this.props.showRegModal !== nextProps.showRegModal)
+		this.setState({showRegModal: nextProps.showRegModal});
+	}
     render() {
         return (
             <div className={styles.mainContainer}>

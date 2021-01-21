@@ -18,6 +18,8 @@
 [data-theme="dark"] .siteLayout .siteLayoutBackground {}
 .menuWrapper {
     float: right;
+    background: inherit;
+    border: none;
 }
 .menuWrapper > li,
 .menuWrapper > li:hover {
@@ -27,7 +29,7 @@
     font-weight: 800;
     font-stretch: normal;
     font-style: normal;
-    line-height: 0.94;
+    line-height: 40px;
     letter-spacing: 2.52px;
     text-align: center;
     color: #ffffff;
@@ -36,8 +38,8 @@
 
 .basicLayout {
     background: none;
-	height: 100%;
-	overflow: auto;
+    height: 100%;
+    overflow: auto;
 }
 .mainContainer .registerBtn,
 .mainContainer .registerBtn:hover {
@@ -69,8 +71,8 @@
     width: 60%;
 }
 .siteLayout .leftContent > h1 {
-    font-family: OpenSans;
-    font-size: 4rem;
+    font-family: 'OpenSans';
+    font-size: 3.25rem;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
@@ -80,17 +82,17 @@
 }
 
 .siteLayout .leftContent > h3 {
-    font-family: OpenSans;
-    font-size: 40px;
+    font-family: 'OpenSans';
+    font-size: 2rem;
     font-weight: 600;
     font-stretch: normal;
     font-style: normal;
-    letter-spacing: 2.2px;
+    letter-spacing: 1.76px;
     text-align: left;
     color: #ffffff;
 }
 .siteLayout .leftContent > h4 {
-    font-family: OpenSans;
+    font-family: 'OpenSans';
     font-size: 2rem;
     font-weight: 600;
     font-stretch: normal;
@@ -100,7 +102,7 @@
     color: #ffffff;
 }
 .siteLayout .leftContent > h5 {
-    font-family: OpenSans;
+    font-family: 'OpenSans';
     font-size: 1.62rem;
     font-weight: bold;
     font-stretch: normal;
@@ -110,14 +112,17 @@
     color: #ffffff;
 }
 .siteLayout .leftContent > p {
-    font-family: OpenSans;
+    font-family: 'OpenSans';
     font-size: 1.375rem;
-    font-weight: normal;
+    font-weight: 300;
     font-stretch: normal;
     font-style: normal;
+    line-height: 34px;
     letter-spacing: normal;
     text-align: left;
     color: #ffffff;
+    margin-top: 15px;
+    width: 80%;
 }
 .rightContent {
     width: 40%;
@@ -128,13 +133,13 @@
     height: 450px;
     background: transparent url('../../../../images/Winners-amico.svg') 0 0 no-repeat padding-box;
     background-size: contain;
-    margin-left: 40px;
 }
-.registerBtnWrapper{
-	position: relative;
+.registerBtnWrapper {
+    position: relative;
 }
-.handImg,.handImg2{
-	width: 230px;
+.handImg,
+.handImg2 {
+    width: 230px;
     height: 90px;
     background: url('../../../../images/3dHand1.png');
     background-repeat: no-repeat;
@@ -143,30 +148,37 @@
     background-size: 140px 240px;
     position: relative;
     top: 18px;
-	left: 50px;
-	transition: ease-in;
-	vertical-align: bottom;
-	animation: slide1 1s forwards infinite;
+    left: 50px;
+    transition: ease-in;
+    vertical-align: bottom;
+    animation: slide1 1s forwards infinite;
     animation-delay: 1s;
 }
-
 @keyframes slide1 {
-	50% { left: 10px;}
-	100% {left: 50px;}
+    50% {
+        left: 10px;
+    }
+    100% {
+        left: 50px;
+    }
 }
-.handImg2{
-	background-image: url('../../../../images/3dHand2.png');
-	background-size: 240px 146px;
+.handImg2 {
+    background-image: url('../../../../images/3dHand2.png');
+    background-size: 240px 146px;
     height: 150px;
     top: 20px;
     vertical-align: text-top;
     position: absolute;
-	left: calc(50% + 130px);
-	animation: slide2 1s infinite;
+    left: calc(50% + 130px);
+    animation: slide2 1s infinite;
 }
 @keyframes slide2 {
-	50% { left: calc(50% + 110px);}
-	100% { left: calc(50% + 130px);}
+    50% {
+        left: calc(50% + 110px);
+    }
+    100% {
+        left: calc(50% + 130px);
+    }
 }
 .clearAll {
     clear: both;
@@ -196,106 +208,168 @@
 }
 .regFormModal {
     background: url('../../../../images/formBackground.svg');
-    width: 70% !important;
+    width: 80% !important;
+    backdrop-filter: blur(40px);
+    border: solid 3px rgba(255, 255, 255, 0.6);
+    background-image: linear-gradient(120deg, rgba(255, 255, 255, 0.4) 5%, rgba(255, 255, 255, 0.05) 96%);
 }
-.downArrowIcon{
-	background-repeat: no-repeat;
-	width: 12px;
+.downArrowIcon {
+    background-repeat: no-repeat;
+    width: 12px;
     height: 12px;
     background: transparent url('../../../../images/chevronDown.svg') 0 0 no-repeat padding-box;
     background-size: contain;
-	background-position: 50% 50%;
-	display: inline-block;
-	float: right;
-    margin-top: 2px;
+    background-position: 50% 50%;
+    display: inline-block;
+    float: right;
+    margin-top: 14px;
+}
+.hamburger {
+    background: transparent url('../../../../images/menu.svg') 0 0 no-repeat padding-box;
+    display: none;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 30px;
+    right: 20px;
 }
 /* For Tablets */
-@media only screen and (max-width:1300px) {
-    .menuWrapper {
+@media only screen and (max-width:800px) {
+    /* .menuWrapper {
         display: none;
-    }
+    } */
     .siteLayout {
         display: block;
+        padding: 0 20px !important;
     }
     .rightContent .img {
-		margin: 50px auto;
-		width: 350px;
-		height: 350px;
+        margin: 50px auto;
+        width: 267px;
+        height: 281px;
     }
     .leftContent,
     .rightContent {
         width: 100%;
     }
     .siteLayout .leftContent h1 {
-        font-family: OpenSans;
-        font-size: 2rem;
+        font-family: 'OpenSans';
+        font-size: 20px;
         font-weight: bold;
         font-stretch: normal;
         font-style: normal;
-        line-height: 4rem;
+        line-height: 20px;
         letter-spacing: 1.76px;
         text-align: left;
         color: #ffffff;
     }
     .siteLayout .leftContent h3 {
-        font-family: OpenSans;
-        font-size: 1.75rem;
+        font-family: 'OpenSans';
+        font-size: 16px;
         font-weight: 600;
         font-stretch: normal;
         font-style: normal;
-        line-height: 3;
-        letter-spacing: 0.99px;
+        line-height: 2.81;
+        letter-spacing: 0.88px;
         text-align: left;
         color: #ffffff;
     }
     .siteLayout .leftContent h4 {
-        font-family: OpenSans;
-        font-size: 1.125rem;
+        font-family: 'OpenSans';
+        font-size: 16px;
         font-weight: 600;
         font-stretch: normal;
         font-style: normal;
-        line-height: 2.94;
-        letter-spacing: 0.45px;
+        line-height: 2.81;
+        letter-spacing: 0.88px;
         text-align: left;
         color: #ffffff;
     }
     .siteLayout .leftContent p {
-        font-family: OpenSans;
-        /* font-size: 0.875rem; */
+        font-family: 'OpenSans';
+        font-size: 14px;
         font-weight: normal;
         font-stretch: normal;
         font-style: normal;
-        line-height: 1.86;
+        line-height: 24px;
         letter-spacing: normal;
         text-align: left;
         color: #ffffff;
+        width: 100%;
     }
     .siteLayout .leftContent h5 {
-        font-family: OpenSans;
+        font-family: 'OpenSans';
+        font-size: 14px;
         font-weight: bold;
         font-stretch: normal;
         font-style: normal;
-        line-height: 2.94;
-        letter-spacing: 0.4px;
+        letter-spacing: 0.35px;
         text-align: left;
         color: #ffffff;
+    }
+    .mainContainer .registerBtn,
+    .mainContainer .registerBtn:hover {
+        width: 164px;
+        height: 38px;
+        font-family: 'OpenSans';
+        font-size: 16px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 0.25;
+        letter-spacing: 1.2px;
+        text-align: center;
+		color: #ffffff;
+		margin-top:20px;
     }
     .sportsListImg {
         display: none;
     }
     .sportsListImgWrapper {
-        width: 100%;
-		height: 900px;
-		margin-top: 50px;
+		width: 100%;
+		height: 700px;
+		margin-top: 100px;
     }
     .sportsListImgTab {
-        background: transparent url('../../../../images/gamesTab.svg') 0 0 no-repeat padding-box;
+        background: transparent url('../../../../images/games-mobile.svg') 0 0 no-repeat padding-box;
         display: block;
         background-position: 50% 50%;
         background-repeat: no-repeat;
         height: 100%;
+    }
+    .handImg,
+    .handImg2 {
+		width: 70px;
+		background-size: 70px;
+		top: 23px;
 	}
-	.handImg,.handImg2{
-		display: none;
+	.handImg2 {
+		top: -20px;
+		left: calc(50% + 70px);
+		background-size: 90px;
+		height: 140px;
+	}
+	@keyframes slide2 {
+		50% {
+			left: calc(50% + 90px);
+		}
+		100% {
+			left: calc(50% + 70px);
+		}
+	}
+    .menuWrapper > li,
+    .menuWrapper > li:hover {
+        text-align: left;
+    }
+    .desktopHeader,
+    .downArrowIcon {
+        display: none;
+    }
+    .hamburger {
+        display: inline-block;
+    }
+	.regFormModal{
+		width:93% !important;
 	}
 }

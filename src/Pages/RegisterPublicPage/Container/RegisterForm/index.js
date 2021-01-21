@@ -91,7 +91,7 @@ const RegistrationForm = () => {
                         <Col span={24}>
                             <Form.Item
                                 name="name"
-                                label="Name"
+								label="Name"
                                 labelCol={{
                                 span: 24
                             }}
@@ -104,11 +104,35 @@ const RegistrationForm = () => {
                                     whitespace: true
                                 }
                             ]}>
-                                <Input/>
+                                <Input placeholder={'Full Name'}/>
                             </Form.Item>
                         </Col>
                     </Row>
-                    <Row>
+					<Row>
+                        <Col span={24}>
+                            <Form.Item
+                                name="phone"
+                                label="Contact No."
+                                labelCol={{
+                                span: 24
+                            }}
+                                wrapperCol={{
+                                span: 24
+                            }}
+                                rules={[{
+                                    required: true,
+                                    message: 'Please input your contact number!'
+                                }
+                            ]}>
+                                <Input
+									placeholder={'Contact No.'}
+                                    style={{
+                                    width: '100%'
+                                }}/>
+                            </Form.Item>
+                        </Col>
+                    </Row>
+					<Row>
                         <Col span={24}>
                             <Form.Item
                                 name="email"
@@ -128,34 +152,12 @@ const RegistrationForm = () => {
                                     message: 'Please input your E-mail!'
                                 }
                             ]}>
-                                <Input/>
+                                 <Input placeholder={'Email ID'}/>
                             </Form.Item>
                         </Col>
                     </Row>
-                    <Row>
-                        <Col span={24}>
-                            <Form.Item
-                                name="phone"
-                                label="Mobile"
-                                labelCol={{
-                                span: 24
-                            }}
-                                wrapperCol={{
-                                span: 24
-                            }}
-                                rules={[{
-                                    required: true,
-                                    message: 'Please input your phone number!'
-                                }
-                            ]}>
-                                <Input
-                                    style={{
-                                    width: '100%'
-                                }}/>
-                            </Form.Item>
-                        </Col>
-                    </Row>
-                    <Row>
+
+					<Row>
                         <Col span={24}>
                             <Form.Item
                                 name="organisation"
@@ -172,7 +174,7 @@ const RegistrationForm = () => {
                                     whitespace: true
                                 }
                             ]}>
-                                <Input/>
+                                <Input  placeholder={'Organization'}/>
                             </Form.Item>
                         </Col>
                     </Row>
@@ -181,7 +183,7 @@ const RegistrationForm = () => {
                     <Col span={24}>
                         <Form.Item
                             name="checkbox-group"
-                            label="Select Sports"
+                            label="Select Sport(s)"
                             labelCol={{
                             span: 24
                         }}
@@ -217,9 +219,10 @@ const RegistrationForm = () => {
                         </Form.Item>
                     </Col>
                 </Row>
+				<Checkbox className={styles.checkbox} onChange={()=>{}}>All Sports 3000/-</Checkbox>
                 <Row>
                     <Button type="primary" htmlType="submit" className={styles.payBtn}>
-                        Pay {sportsChecked.length > 0
+					PAY 500 AED {sportsChecked.length > 0
                             ? (sportsChecked.length > 2
                                 ? '3000'
                                 : '1000')
