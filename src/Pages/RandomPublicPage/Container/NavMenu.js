@@ -6,11 +6,10 @@ const MenuItemGroup = Menu.ItemGroup;
 
 const {useBreakpoint} = Grid;
 
-const NavMenu = ({showRegModal}) => {
-    const {md} = useBreakpoint()
+const NavMenu = ({showRegModal,mode}) => {
     return (
         <Menu
-			theme="dark" mode="horizontal"
+			theme="dark" mode={mode || "horizontal"}
             className={styles.menuWrapper}>
             <Menu.Item key="1" onClick={() => showRegModal(true)}>REGISTER</Menu.Item>
             <SubMenu

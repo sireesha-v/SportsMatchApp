@@ -372,4 +372,18 @@
 	.regFormModal{
 		width:93% !important;
 	}
+	.menuWrapper > li,
+    .menuWrapper > li:hover {
+		font-size: 12px;
+		margin-left: 0 !important;
+		padding-left: 0 !important;
+	}
+	.menuWrapper > li > div{
+		margin-left: 0 !important;
+		padding-left: 0 !important;
+	}
+	.menuWrapper{
+		position: relative;
+		left: -30px;
+	}
 }

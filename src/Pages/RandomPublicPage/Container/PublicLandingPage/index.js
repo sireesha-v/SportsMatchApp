@@ -45,8 +45,8 @@ class PublicLandingPage extends React.Component {
 						onClose={this.onClose}
 						visible={this.state.visible}
 						>
-						 <NavMenu/>
-						</Drawer>
+						<NavMenu mode={'vertical'}/>
+					</Drawer>
 					<LandingPageContent showRegModal={this.state.showRegModal}/>
                 </Layout>
             </div>

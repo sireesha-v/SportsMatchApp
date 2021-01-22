@@ -70,7 +70,9 @@ h6 {
     color: #000000;
     top: -6px;
 }
-
+.ant-menu-dark.ant-menu-dark:not(.ant-menu-horizontal) .ant-menu-item-selected {
+    background-color: #ff57228c;
+}
 .ant-tabs-card.ant-tabs-top > .ant-tabs-nav .ant-tabs-tab-active,
 .ant-tabs-card.ant-tabs-top > div > .ant-tabs-nav .ant-tabs-tab-active {
     border-bottom-color: #fff;
@@ -169,7 +171,7 @@ h6 {
     display: none;
 }
 .ant-drawer-body {
-    background: #FF5722;
+    background-image: url('./images/Background.png') !important;;
 }
 .ant-menu-inline,
 .ant-menu-vertical,
